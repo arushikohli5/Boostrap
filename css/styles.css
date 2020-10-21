@@ -32,3 +32,6 @@ body{
 .navbar-dark{
     background-color:#9900cc ;
 }
+.block{
+width: 100%;
+}
