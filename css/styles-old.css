@@ -41,3 +41,21 @@ width: 100%;
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
+.carousel{
+    margin-top: 35px;
+    background:#512DA8 ;
+}
+.carousel-item{
+    height: 300px;
+}
+.carousel-item img{
+    position: absolute;
+    top:0;
+    left:0;
+    min-height:300px;
+}
+#carousalButton{
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
