@@ -48,6 +48,10 @@ body{
     z-index:0;
 }
 
+.block{
+    width: 100%;
+}
+
 .navbar-dark {
      background-color: $background-dark;
 }
@@ -74,20 +78,19 @@ body{
     }
 }
 
-#carouselButton {
-    right:0px;
+#carousalButton{
+    right: 0px;
     position: absolute;
     bottom: 0px;
-    z-index: 1;
 }
 .modal-content
 {
   background-color:$background-modal;
   color: $modal-text;
-  .modal-content .modal-header{
-    background-color: $background-modal;
+  .modal-header{
+    background-color: $background-header-modal;
     color: $modal-header-text;
-    .modal-content .modal-header .close{
+    .close{
       color: $floral-white;}
     }
 }
