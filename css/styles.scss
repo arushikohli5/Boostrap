@@ -1,6 +1,11 @@
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
+$background-header-modal:#643da9;
+$background-modal:#d4c7eb;
+$modal-text:black;
+$modal-header-text:white;
+$floral-white: #ddd;
 $background-pale: #D1C4E9;
 
 // Height variables
@@ -74,4 +79,15 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+.modal-content
+{
+  background-color:$background-modal;
+  color: $modal-text;
+  .modal-content .modal-header{
+    background-color: $background-modal;
+    color: $modal-header-text;
+    .modal-content .modal-header .close{
+      color: $floral-white;}
+    }
 }

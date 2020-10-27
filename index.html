@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Ristorante Con Fusion</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
@@ -15,7 +13,6 @@
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
-
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
@@ -31,7 +28,7 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-adress-card fa-lg"></span>Contact</a></li>
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="login">
                     <span class="fa fa-sign-in"></span>Login
                 </a>
             </span>
@@ -76,8 +73,6 @@
             </div>
         </div>
     </div>
-
-
     <div id="formModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -136,7 +131,6 @@
         </div>
     </div>
 
-
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -148,13 +142,11 @@
                     <img src="img/logo.png" class="image-fluid">
                 </div>
                 <div class="col-12 col-md-3 align-self-center">
-                    <a class="btn btn-lg block btn-warning" data-toggle="modal" data-target="#formModal" data-html="true"
-                    href="#abc">Reserve Table</a>
+                    <a class="btn btn-lg block btn-warning" id="reserve">Reserve Table</a>
                 </div>
             </div>
         </div>
     </header>
-
     <div class="container">
         <div class="row row-content">
             <div class="col">
@@ -198,7 +190,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -213,8 +204,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -229,7 +218,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
@@ -246,7 +234,6 @@
             </div>
         </div>
     </div>
-
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -288,7 +275,6 @@
            </div>
         </div>
     </footer>
-
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -309,10 +295,15 @@
                 $('#carousalButton').children('span').addClass('fa-pause');
             }
         });
+            $('#login').click(function(){
+                $('#loginModal').modal('show');
+            });
+            $('#reserve').click(function(){
+                $('#formModal').modal('show');
+            });
         });
 
       </script>
-
 </body>
 
 </html>

@@ -13,6 +13,9 @@
   margin: 0px auto;
   padding: 20px 0px; }
 
+.block{
+  width: 100%;}
+
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
@@ -47,8 +50,18 @@ body {
       left: 0;
       min-height: 300px; }
 
-#carouselButton {
-  right: 0px;
-  position: absolute;
-  bottom: 0px;
-  z-index: 1; }
+      #carousalButton{
+        right: 0px;
+        position: absolute;
+        bottom: 0px;
+    }
+.modal-content
+{
+  background-color:#d4c7eb;
+  color: black;}
+  .modal-content .modal-header{
+    background-color: #643da9;
+    color: white;}
+    .modal-content .modal-header .close{
+      color: #ddd;}
+
